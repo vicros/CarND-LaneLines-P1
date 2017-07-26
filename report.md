@@ -74,7 +74,7 @@ This is most likely due to the contrast level, brightness and also content (near
 
 #### P1-Challenge-Attempt1.ipynb
 
-After some research, I learnt that grayscale transform may not be robust enough to help Canny algorithm in the case of the challenge video. A solution was to transform the RGB image into Hue, Saturation & Luminance (HSL) color space instead of grayscale, and select the yellow and white color lane lines using cv2.inRange() function.
+After some research, such as from [here](http://jeffwen.com/2017/02/23/lane_finding), I learnt that grayscale transform may not be robust enough to help Canny algorithm in the case of the challenge video. A solution was to transform the RGB image into Hue, Saturation & Luminance (HSL) color space instead of grayscale, and select the yellow and white color lane lines using cv2.inRange() function.
 
 In addition, instead of the linear regression technique, a commonly used approach to forming a single line from multiple Hough line segments is to calculate the length-weighted average of slopes and length-weighted average of intercepts of these segments as the slope and intercept, respectively, of the single line.
 
